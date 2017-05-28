@@ -20,10 +20,10 @@ MonoBehaviour:
     y: 30
     width: 950
     height: 626
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 681, y: 471}
+  m_MaxSize: {x: 14002, y: 14021}
   vertical: 0
-  controlID: 2352
+  controlID: 4293
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -120,10 +120,10 @@ MonoBehaviour:
     y: 0
     width: 673
     height: 626
-  m_MinSize: {x: 404, y: 492}
-  m_MaxSize: {x: 10002, y: 14042}
+  m_MinSize: {x: 404, y: 471}
+  m_MaxSize: {x: 10000, y: 14021}
   vertical: 1
-  controlID: 2311
+  controlID: 4294
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 221}
   m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 2288
+  controlID: 4295
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -201,9 +201,9 @@ MonoBehaviour:
     height: 334
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2afbffff
-    m_LastClickedID: -1238
-    m_ExpandedIDs: b8f4ffff34fbffff00000000
+    m_SelectedIDs: b8f4ffff
+    m_LastClickedID: -2888
+    m_ExpandedIDs: 7c82ffffb8f4ffff34fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -278,7 +278,7 @@ MonoBehaviour:
     width: 467
     height: 334
   m_SceneLighting: 1
-  lastFramingTime: 4026.2127073779548
+  lastFramingTime: 6444.987637892741
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
@@ -312,9 +312,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 33.83191
+    m_Target: 23.716974
     speed: 2
-    m_Value: 33.83191
+    m_Value: 23.716974
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -343,14 +343,14 @@ MonoBehaviour:
     y: 355
     width: 673
     height: 271
-  m_MinSize: {x: 232, y: 271}
-  m_MaxSize: {x: 10002, y: 10021}
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
   m_ActualView: {fileID: 10}
   m_Panes:
   - {fileID: 10}
   - {fileID: 11}
   m_Selected: 0
-  m_LastSelected: 0
+  m_LastSelected: 1
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -388,18 +388,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Aman Deep Singh\Documents\Unity\UFO
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 48250000
-    m_LastClickedID: 9544
+    m_SelectedIDs: 4a2a0000
+    m_LastClickedID: 10826
     m_ExpandedIDs: 4825000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -453,9 +453,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 2afbffff
-    m_LastClickedInstanceID: -1238
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: b8f4ffff
+    m_LastClickedInstanceID: -2888
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000e626000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -472,7 +472,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 9}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -505,10 +505,10 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 718
-    width: 1366
-    height: 308
+    x: 415
+    y: 459
+    width: 671
+    height: 246
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -527,8 +527,8 @@ MonoBehaviour:
     y: 0
     width: 277
     height: 626
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -561,7 +561,7 @@ MonoBehaviour:
     y: 100
     width: 275
     height: 605
-  m_ScrollPosition: {x: 0, y: 23.955078}
+  m_ScrollPosition: {x: 0, y: 3.9550781}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 160
