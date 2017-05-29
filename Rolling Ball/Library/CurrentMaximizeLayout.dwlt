@@ -23,7 +23,7 @@ MonoBehaviour:
   m_MinSize: {x: 681, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 5113
+  controlID: 9459
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -67,8 +67,8 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
-    m_HSlider: 1
-    m_VSlider: 1
+    m_HSlider: 0
+    m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoom: 0
@@ -80,18 +80,18 @@ MonoBehaviour:
       y: 17
       width: 749
       height: 326
-    m_Scale: {x: 1.3439162, y: 1.3439162}
-    m_Translation: {x: 318.64365, y: 155.6058}
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 374.5, y: 163}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -237.10083
-      y: -115.78535
-      width: 557.3264
-      height: 242.57465
+      x: -374.5
+      y: -163
+      width: 749
+      height: 326
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 5090
+  controlID: 9460
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 221}
   m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 5091
+  controlID: 9461
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -200,9 +200,9 @@ MonoBehaviour:
     width: 318
     height: 343
   m_TreeViewState:
-    scrollPos: {x: 0, y: 26}
-    m_SelectedIDs: 90f1ffff
-    m_LastClickedID: -3696
+    scrollPos: {x: 0, y: 42}
+    m_SelectedIDs: 3c23ffff
+    m_LastClickedID: -56516
     m_ExpandedIDs: 8649ffffb8a4ffff90f1ffff34fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -311,7 +311,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
     speed: 2
-    m_Value: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+    m_Value: {x: -0.7071068, y: 0, z: -0, w: -0.7071068}
   m_Size:
     m_Target: 20.536667
     speed: 2
@@ -344,8 +344,8 @@ MonoBehaviour:
     y: 364
     width: 1073
     height: 271
-  m_MinSize: {x: 232, y: 271}
-  m_MaxSize: {x: 10002, y: 10021}
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
   m_ActualView: {fileID: 10}
   m_Panes:
   - {fileID: 10}
@@ -388,18 +388,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Aman Deep Singh\Documents\Unity\Rolling Ball
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 48250000
-    m_LastClickedID: 9544
+    m_SelectedIDs: 1e2b0000
+    m_LastClickedID: 11038
     m_ExpandedIDs: 4825000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -453,8 +453,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 90f1ffff
-    m_LastClickedInstanceID: -3696
+    m_SelectedInstanceIDs: 3c23ffff
+    m_LastClickedInstanceID: -56516
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000e6260000e826000000000000
     m_RenameOverlay:
@@ -501,8 +501,8 @@ MonoBehaviour:
     y: 0
     width: 293
     height: 635
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
