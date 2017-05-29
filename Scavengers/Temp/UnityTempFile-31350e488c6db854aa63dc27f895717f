@@ -86,7 +86,13 @@
 -define:UNITY_TEAM_LICENSE
 -define:ENABLE_VSTU
 Assets/Scripts/BoardManager.cs
+Assets/Scripts/Enemy.cs
 Assets/Scripts/GameManager.cs
+Assets/Scripts/Loader.cs
+Assets/Scripts/MovingObject.cs
+Assets/Scripts/Player.cs
+Assets/Scripts/SoundManager.cs
+Assets/Scripts/Wall.cs
 Assets/TutorialInfo/Scripts/Readme.cs
 Assets/TutorialInfo/Scripts/TutorialInfo.cs
 Assets/_Complete-Game/Scripts/BoardManager.cs
