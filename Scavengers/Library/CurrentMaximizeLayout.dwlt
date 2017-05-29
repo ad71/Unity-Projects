@@ -23,7 +23,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 1473
+  controlID: 1667
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 1474
+  controlID: 1668
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 1475
+  controlID: 1548
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -201,8 +201,8 @@ MonoBehaviour:
     height: 336
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: eef7ffff
-    m_LastClickedID: -2066
+    m_SelectedIDs: ca260000
+    m_LastClickedID: 9930
     m_ExpandedIDs: e4fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -344,8 +344,8 @@ MonoBehaviour:
     y: 357
     width: 968
     height: 278
-  m_MinSize: {x: 232, y: 271}
-  m_MaxSize: {x: 10002, y: 10021}
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
   m_ActualView: {fileID: 10}
   m_Panes:
   - {fileID: 10}
@@ -398,7 +398,7 @@ MonoBehaviour:
   m_LastProjectPath: C:\Users\Aman Deep Singh\Documents\Unity\Scavengers
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 103}
+    scrollPos: {x: 0, y: 132}
     m_SelectedIDs: 48260000
     m_LastClickedID: 9800
     m_ExpandedIDs: 00000000ca240000f6240000a6250000aa26000000ca9a3bffffff7f
@@ -454,9 +454,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: eef7ffff
-    m_LastClickedInstanceID: -2066
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: ca260000
+    m_LastClickedInstanceID: 9930
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000e6260000e826000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -481,7 +481,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 80}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 115
 --- !u!114 &11
@@ -562,7 +562,7 @@ MonoBehaviour:
     y: 92
     width: 396
     height: 614
-  m_ScrollPosition: {x: 0, y: 0}
+  m_ScrollPosition: {x: 0, y: 43.95508}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 160
