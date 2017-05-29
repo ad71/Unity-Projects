@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour {
     void InitGame()
     {
         doingSetup = true;
-        levelImage = GameObject.Find("levelImage");
+        levelImage = GameObject.Find("LevelImage");
         levelText = GameObject.Find("LevelText").GetComponent<Text>();
         levelText.text = "Day " + level;
         levelImage.SetActive(true);
