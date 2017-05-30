@@ -10,10 +10,14 @@ public class GameController : MonoBehaviour {
     public float spawnWait;
     public float startWait;
     public float waveWait;
+    public GUIText scoreText;
+    private int score;
 
 	// Use this for initialization
 	void Start () {
         StartCoroutine(SpawnWaves());
+        score = 0;
+        UpdateScore();
 	}
 	
 	// Update is called once per frame
@@ -38,5 +42,16 @@ public class GameController : MonoBehaviour {
             }
             yield return new WaitForSeconds(waveWait);
         }
+    }
+    
+    public void AddScore(int newScore)
+    {
+        score += newScore;
+        UpdateScore();
+    }
+
+    void UpdateScore ()
+    {
+        scoreText.text = "Score: " + score;
     }
 }
