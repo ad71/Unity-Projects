@@ -12,6 +12,7 @@ public class Boundary
 public class PlayerController : MonoBehaviour {
 
     public float speed;
+    public float tilt;
     public Boundary b;
 	// Use this for initialization
 	void Start () {
@@ -38,5 +39,7 @@ public class PlayerController : MonoBehaviour {
             0.0f,
             Mathf.Clamp(rb.position.z, b.zMin, b.zMax)
         );
+
+        rb.rotation = Quaternion.Euler(0.0f, 0.0f, rb.velocity.x * -tilt);
     }
 }
