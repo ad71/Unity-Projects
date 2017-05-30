@@ -23,7 +23,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 3817
+  controlID: 5552
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 3818
+  controlID: 5553
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 221}
   m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 3819
+  controlID: 5554
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -201,8 +201,8 @@ MonoBehaviour:
     height: 343
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 50d0ffff
-    m_LastClickedID: -12208
+    m_SelectedIDs: 96260000
+    m_LastClickedID: 9878
     m_ExpandedIDs: 80d3ffffe2fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -244,8 +244,8 @@ MonoBehaviour:
     y: 0
     width: 753
     height: 364
-  m_MinSize: {x: 204, y: 221}
-  m_MaxSize: {x: 4004, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 8}
@@ -313,9 +313,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.40473202, y: 0.34544307, z: -0.16850059, w: -0.8297437}
   m_Size:
-    m_Target: 3.0121107
+    m_Target: 3.0844932
     speed: 2
-    m_Value: 3.0121107
+    m_Value: 3.0844932
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -344,8 +344,8 @@ MonoBehaviour:
     y: 364
     width: 1073
     height: 271
-  m_MinSize: {x: 232, y: 271}
-  m_MaxSize: {x: 10002, y: 10021}
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
   m_ActualView: {fileID: 10}
   m_Panes:
   - {fileID: 10}
@@ -388,18 +388,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Textures
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Textures
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Aman Deep Singh\Documents\Unity\Space Shooter
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 27}
-    m_SelectedIDs: 1a260000
-    m_LastClickedID: 9754
+    m_SelectedIDs: 822c0000
+    m_LastClickedID: 11394
     m_ExpandedIDs: 00000000ca2400004c25000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -453,8 +453,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 50d0ffff
-    m_LastClickedInstanceID: -12208
+    m_SelectedInstanceIDs: 96260000
+    m_LastClickedInstanceID: 9878
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000e6260000e8260000000000000a2b0000
     m_RenameOverlay:
@@ -535,7 +535,7 @@ MonoBehaviour:
     y: 92
     width: 291
     height: 614
-  m_ScrollPosition: {x: 0, y: 0}
+  m_ScrollPosition: {x: 0, y: 276.95508}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 203
