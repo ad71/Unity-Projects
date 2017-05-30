@@ -11,6 +11,10 @@ public class GameController : MonoBehaviour {
     public float startWait;
     public float waveWait;
     public GUIText scoreText;
+    public GUIText restartText;
+    public GUIText gameovertext;
+    private bool gameover;
+    private bool restart;
     private int score;
 
 	// Use this for initialization
@@ -18,11 +22,21 @@ public class GameController : MonoBehaviour {
         StartCoroutine(SpawnWaves());
         score = 0;
         UpdateScore();
+        gameover = false;
+        restart = false;
+        restartText.text = "";
+        gameovertext.text = "";
 	}
 	
 	// Update is called once per frame
 	void Update () {
-       
+       if(restart)
+        {
+            if(Input.GetKeyDown(KeyCode.R))
+            {
+                Application.LoadLevel(Application.loadedLevel);
+            }
+        }
 	}
 
     // We make this function a coroutine so that calling the WaitForSeconds() function doesn't pause the entire game.
@@ -41,6 +55,12 @@ public class GameController : MonoBehaviour {
                 yield return new WaitForSeconds(spawnWait);
             }
             yield return new WaitForSeconds(waveWait);
+            if(gameover)
+            {
+                restartText.text = "Press 'R' to restart";
+                restart = true;
+                break;
+            }
         }
     }
     
@@ -48,6 +68,12 @@ public class GameController : MonoBehaviour {
     {
         score += newScore;
         UpdateScore();
+    }
+
+    public void GameOver()
+    {
+        gameovertext.text = "Game Over!";
+        gameover = true;
     }
 
     void UpdateScore ()
