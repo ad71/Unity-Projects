@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Destroy : MonoBehaviour {
 
+    public GameObject explosion;
+    public GameObject playerExplosion;
 	// Use this for initialization
 	void Start () {
 		
@@ -18,6 +20,9 @@ public class Destroy : MonoBehaviour {
     {
         if (other.CompareTag("Boundary"))
             return;
+        Instantiate(explosion, this.transform.position, this.transform.rotation);
+        if (other.CompareTag("Player"))
+            Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
         Destroy(other.gameObject);
         Destroy(this.gameObject);
         //All destroy calls are stacked and executed at the end of each frame together, so the order of destruction doesn't matter
