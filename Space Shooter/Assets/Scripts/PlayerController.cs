@@ -14,6 +14,11 @@ public class PlayerController : MonoBehaviour {
     public float speed;
     public float tilt;
     public Boundary b;
+    public GameObject shot;
+    public Transform shotspawn;
+    public float fireRate = 0.5f;
+    private float nextFire = 0.0f;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -21,7 +26,11 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        //Since firing a weapon doesn't require physics, we will put the firing code in the Update function
+        if(Input.GetButton("Fire1") && Time.time > nextFire) {
+            nextFire = Time.time + fireRate;
+            Instantiate(shot, shotspawn.position, shotspawn.rotation);
+        }
 	}
 
     // FixedUpdate is called once per frame. This will be called by Unity before every Physics step
