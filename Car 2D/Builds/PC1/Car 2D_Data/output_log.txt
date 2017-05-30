@@ -1,0 +1,141 @@
+Initialize engine version: 5.6.1f1 (2860b30f0b54)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) HD Graphics 5500 (ID=0x1616)
+    Vendor:   Intel
+    VRAM:     1642 MB
+    Driver:   20.19.15.4531
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Aman Deep Singh\Documents\Unity\Car 2D\Builds\Car 2D_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Aman Deep Singh\Documents\Unity\Car 2D\Builds\Car 2D_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Aman Deep Singh\Documents\Unity\Car 2D\Builds\Car 2D_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Aman Deep Singh\Documents\Unity\Car 2D\Builds\Car 2D_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Aman Deep Singh\Documents\Unity\Car 2D\Builds\Car 2D_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Aman Deep Singh\Documents\Unity\Car 2D\Builds\Car 2D_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Aman Deep Singh\Documents\Unity\Car 2D\Builds\Car 2D_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Aman Deep Singh\Documents\Unity\Car 2D\Builds\Car 2D_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Aman Deep Singh\Documents\Unity\Car 2D\Builds\Car 2D_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Aman Deep Singh\Documents\Unity\Car 2D\Builds\Car 2D_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Aman Deep Singh\Documents\Unity\Car 2D\Builds\Car 2D_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Aman Deep Singh\Documents\Unity\Car 2D\Builds\Car 2D_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.093 seconds
+Platform assembly: C:\Users\Aman Deep Singh\Documents\Unity\Car 2D\Builds\Car 2D_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Aman Deep Singh\Documents\Unity\Car 2D\Builds\Car 2D_Data\Managed\System.dll (this message is harmless)
+desktop: 1366x768 60Hz; virtual: 2732x768 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 2.536672 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.104886 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 352.
+Total: 0.582464 ms (FindLiveObjects: 0.093912 ms CreateObjectMapping: 0.055937 ms MarkObjects: 0.414653 ms  DeleteObjects: 0.015908 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.558858 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 352.
+Total: 0.213484 ms (FindLiveObjects: 0.037975 ms CreateObjectMapping: 0.045160 ms MarkObjects: 0.121624 ms  DeleteObjects: 0.007697 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.753868 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 352.
+Total: 0.248381 ms (FindLiveObjects: 0.044647 ms CreateObjectMapping: 0.050292 ms MarkObjects: 0.145231 ms  DeleteObjects: 0.007184 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.600426 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 352.
+Total: 0.216050 ms (FindLiveObjects: 0.039002 ms CreateObjectMapping: 0.045673 ms MarkObjects: 0.122651 ms  DeleteObjects: 0.008210 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.521908 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 352.
+Total: 0.200655 ms (FindLiveObjects: 0.049265 ms CreateObjectMapping: 0.035409 ms MarkObjects: 0.109308 ms  DeleteObjects: 0.006158 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.743091 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 352.
+Total: 0.340754 ms (FindLiveObjects: 0.063121 ms CreateObjectMapping: 0.100584 ms MarkObjects: 0.169350 ms  DeleteObjects: 0.006671 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.529093 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 352.
+Total: 0.193983 ms (FindLiveObjects: 0.037975 ms CreateObjectMapping: 0.032843 ms MarkObjects: 0.114953 ms  DeleteObjects: 0.007184 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.575793 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 352.
+Total: 0.193983 ms (FindLiveObjects: 0.041567 ms CreateObjectMapping: 0.033870 ms MarkObjects: 0.111361 ms  DeleteObjects: 0.006158 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.563476 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 352.
+Total: 0.191931 ms (FindLiveObjects: 0.043620 ms CreateObjectMapping: 0.033357 ms MarkObjects: 0.107255 ms  DeleteObjects: 0.006671 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.508566 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 352.
+Total: 0.239657 ms (FindLiveObjects: 0.091860 ms CreateObjectMapping: 0.031304 ms MarkObjects: 0.109308 ms  DeleteObjects: 0.006671 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.527040 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 352.
+Total: 0.231959 ms (FindLiveObjects: 0.048752 ms CreateObjectMapping: 0.047726 ms MarkObjects: 0.127269 ms  DeleteObjects: 0.007184 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.509079 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 352.
+Total: 0.217077 ms (FindLiveObjects: 0.039515 ms CreateObjectMapping: 0.048239 ms MarkObjects: 0.119572 ms  DeleteObjects: 0.009237 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.516777 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 352.
+Total: 0.194497 ms (FindLiveObjects: 0.039515 ms CreateObjectMapping: 0.033870 ms MarkObjects: 0.113927 ms  DeleteObjects: 0.006671 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.481880 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 352.
+Total: 0.191417 ms (FindLiveObjects: 0.038488 ms CreateObjectMapping: 0.043620 ms MarkObjects: 0.101097 ms  DeleteObjects: 0.007697 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.494196 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 352.
+Total: 0.240683 ms (FindLiveObjects: 0.051318 ms CreateObjectMapping: 0.049778 ms MarkObjects: 0.131888 ms  DeleteObjects: 0.006671 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.616848 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 352.
+Total: 0.210405 ms (FindLiveObjects: 0.049778 ms CreateObjectMapping: 0.038488 ms MarkObjects: 0.115466 ms  DeleteObjects: 0.006158 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.455194 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 352.
+Total: 0.194497 ms (FindLiveObjects: 0.041054 ms CreateObjectMapping: 0.033870 ms MarkObjects: 0.111874 ms  DeleteObjects: 0.007184 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.798002 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 352.
+Total: 0.229393 ms (FindLiveObjects: 0.045673 ms CreateObjectMapping: 0.045160 ms MarkObjects: 0.130348 ms  DeleteObjects: 0.007184 ms)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 66b4 -> priority: 1 
+  Thread -> id: 6060 -> priority: 1 
