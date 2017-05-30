@@ -7,6 +7,9 @@ public class EndGame : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        if (collision.CompareTag("Collidable"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 }
