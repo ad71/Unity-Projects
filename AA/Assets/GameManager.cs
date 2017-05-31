@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour {
     public Rotator rotator;
     public Spawner spawner;
 
+    // public Animator animator;
+
 	public void GameOver()
     {
         Debug.Log("GameOver!");
@@ -16,6 +18,7 @@ public class GameManager : MonoBehaviour {
 
         rotator.enabled = false;
         spawner.enabled = false;
+        // animator.SetTrigger("EndGame");
         gameHasEnded = true;
     }
 }
