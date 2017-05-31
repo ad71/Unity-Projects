@@ -20,6 +20,7 @@ public class Pin : MonoBehaviour {
     {
         if(collision.CompareTag("Rotator"))
         {
+            this.transform.SetParent(collision.transform);
             isPinned = true;
         }
     }
