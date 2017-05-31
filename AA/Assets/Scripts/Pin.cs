@@ -23,11 +23,14 @@ public class Pin : MonoBehaviour {
             this.transform.SetParent(collision.transform);
             
             // To flip the direction every time a pin is fired
-            collision.GetComponent<Rotator>().speed *= -1;
+            // collision.GetComponent<Rotator>().speed *= -1;
 
             // To increase the speed every time a pin is fired
             // collision.GetComponent<Rotator>().speed += 5f;
             isPinned = true;
+        } else if (collision.CompareTag("Pin"))
+        {
+            FindObjectOfType<GameManager>().GameOver();
         }
     }
 }
