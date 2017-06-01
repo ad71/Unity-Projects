@@ -6,17 +6,20 @@ public class PerlinNoise : MonoBehaviour {
 
     public int width = 256;
     public int height = 256;
-	// Use this for initialization
-	void Start () {
+    public float scale = 20f;
+    public float xoffset = 100f;
+    public float yoffset = 100f;
+    // Use this for initialization
+    private void Start()
+    {
+        xoffset = Random.Range(0f, 9999f);
+        yoffset = Random.Range(0f, 9999f);
+    }
+    void Update () {
         Renderer renderer = GetComponent<Renderer>();
         renderer.material.mainTexture = GenerateTexture();
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
     Texture2D GenerateTexture()
     {
         Texture2D texture = new Texture2D(width, height);
@@ -36,8 +39,8 @@ public class PerlinNoise : MonoBehaviour {
 
     Color CalculateColor (int x, int y)
     {
-        float xCoord = (float) x / width;
-        float yCoord = (float) y / height;
+        float xCoord = (float) x / width * scale + xoffset;
+        float yCoord = (float) y / height * scale + yoffset;
         float sample = Mathf.PerlinNoise(xCoord, yCoord);
         return new Color(sample, sample, sample);
     }
