@@ -1,12 +1,30 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.Plugins", "Sandbox.Plugins.csproj", "{50568CFA-1BFB-3800-6D0F-13AA610C3EF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox", "Sandbox.csproj", "{40AF9182-7ADC-BCB9-9038-C543DAC6F602}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.Editor.Plugins", "Sandbox.Editor.Plugins.csproj", "{9A347C84-55C4-EFE9-AB96-EEE234600605}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50568CFA-1BFB-3800-6D0F-13AA610C3EF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50568CFA-1BFB-3800-6D0F-13AA610C3EF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50568CFA-1BFB-3800-6D0F-13AA610C3EF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50568CFA-1BFB-3800-6D0F-13AA610C3EF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40AF9182-7ADC-BCB9-9038-C543DAC6F602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40AF9182-7ADC-BCB9-9038-C543DAC6F602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40AF9182-7ADC-BCB9-9038-C543DAC6F602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40AF9182-7ADC-BCB9-9038-C543DAC6F602}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A347C84-55C4-EFE9-AB96-EEE234600605}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A347C84-55C4-EFE9-AB96-EEE234600605}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A347C84-55C4-EFE9-AB96-EEE234600605}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A347C84-55C4-EFE9-AB96-EEE234600605}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
