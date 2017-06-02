@@ -1,12 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Top Down Car 2", "Top Down Car 2.csproj", "{6B406E73-9A98-6044-37C4-008DE4884C17}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B406E73-9A98-6044-37C4-008DE4884C17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B406E73-9A98-6044-37C4-008DE4884C17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B406E73-9A98-6044-37C4-008DE4884C17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B406E73-9A98-6044-37C4-008DE4884C17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
