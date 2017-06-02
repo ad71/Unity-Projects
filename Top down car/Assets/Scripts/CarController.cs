@@ -20,5 +20,16 @@ public class CarController : MonoBehaviour {
             rb.AddForce(-this.transform.up * speed);
 
         rb.AddTorque(Input.GetAxis("Horizontal") * torque);
+        rb.velocity = getVelocityTangent();
 	}
+
+    Vector2 getVelocityTangent()
+    {
+        return transform.up * Vector2.Dot(rb.velocity, transform.up);
+    }
+
+    Vector2 getVelocityNormal()
+    {
+        return transform.right * Vector2.Dot(rb.velocity, transform.right);
+    }
 }
