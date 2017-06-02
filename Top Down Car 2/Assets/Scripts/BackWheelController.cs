@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WheelController : MonoBehaviour {
+public class BackWheelController : MonoBehaviour {
 
     private Rigidbody2D rb;
     public float speed = 10f;
