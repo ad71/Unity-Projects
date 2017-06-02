@@ -20,10 +20,10 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 635
-  m_MinSize: {x: 679, y: 471}
-  m_MaxSize: {x: 14000, y: 14021}
+  m_MinSize: {x: 681, y: 471}
+  m_MaxSize: {x: 14002, y: 14021}
   vertical: 0
-  controlID: 6330
+  controlID: 9165
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 471}
   m_MaxSize: {x: 10000, y: 14021}
   vertical: 1
-  controlID: 6299
+  controlID: 9166
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 221}
   m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 6300
+  controlID: 9167
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -201,9 +201,9 @@ MonoBehaviour:
     height: 336
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: bc320000
-    m_LastClickedID: 12988
-    m_ExpandedIDs: 609dfdff689dfdff8af1ffff8cf1ffff8ef1ffff90f1ffff92f1ffff94f1ffff96f1ffffe2fbffff00000000d8320000
+    m_SelectedIDs: 1e79fcff
+    m_LastClickedID: -231138
+    m_ExpandedIDs: 609dfdff8af1ffff8cf1ffff8ef1ffff90f1ffff92f1ffff94f1ffffe2fbffff00000000d8320000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -280,14 +280,14 @@ MonoBehaviour:
     width: 673
     height: 336
   m_SceneLighting: 1
-  lastFramingTime: 1506.4447459119704
+  lastFramingTime: 2114.4079454340927
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 9.203864, y: 2.1978467, z: 9.607432}
+    m_Target: {x: 90.706345, y: 0, z: 115.89502}
     speed: 2
-    m_Value: {x: 9.203864, y: 2.1978467, z: 9.607432}
+    m_Value: {x: 90.706345, y: 0, z: 115.89502}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -310,13 +310,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.08752953, y: 0.82022464, z: -0.13052855, w: 0.5500294}
+    m_Target: {x: 0.11527684, y: 0.6850859, z: -0.11113143, w: 0.7106465}
     speed: 2
-    m_Value: {x: 0.08752953, y: 0.82022464, z: -0.13052855, w: 0.5500294}
+    m_Value: {x: 0.11527684, y: 0.6850859, z: -0.11113143, w: 0.7106465}
   m_Size:
-    m_Target: 15.76768
+    m_Target: 69.63655
     speed: 2
-    m_Value: 15.76768
+    m_Value: 69.63655
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -416,18 +416,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Standard Assets/Vehicles/Aircraft/Prefabs
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Standard Assets/Vehicles/Aircraft/Prefabs
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Aman Deep Singh\Documents\Unity\Sandbox
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 256}
-    m_SelectedIDs: 962d0000
-    m_LastClickedID: 11670
+    scrollPos: {x: 0, y: 12}
+    m_SelectedIDs: b4250000
+    m_LastClickedID: 9652
     m_ExpandedIDs: 00000000b4250000d6280000e2290000ba2e0000722f000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -481,8 +481,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: bc320000
-    m_LastClickedInstanceID: 12988
+    m_SelectedInstanceIDs: 1e79fcff
+    m_LastClickedInstanceID: -231138
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
@@ -555,8 +555,8 @@ MonoBehaviour:
     y: 0
     width: 398
     height: 635
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
