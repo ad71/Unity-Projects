@@ -11,11 +11,13 @@ public class Engine : MonoBehaviour {
     public float mmt = 100f;
     public float currentSpeed;
     public float maxSpeed = 100f;
+    public Vector3 centerOfMass;
 
     private List<Transform> nodes;
     private int current = 0;
 	// Use this for initialization
 	void Start () {
+        GetComponent<Rigidbody>().centerOfMass = centerOfMass;
         Transform[] pathTransforms = path.GetComponentsInChildren<Transform>();
         nodes = new List<Transform>();
 
