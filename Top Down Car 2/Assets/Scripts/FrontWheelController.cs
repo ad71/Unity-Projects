@@ -6,6 +6,7 @@ public class FrontWheelController : MonoBehaviour {
 
     private Rigidbody2D rb;
     private HingeJoint2D hj;
+    public float drift = 0.7f;
 	// Use this for initialization
 	void Start () {
         rb = GetComponent<Rigidbody2D>();
@@ -50,5 +51,16 @@ public class FrontWheelController : MonoBehaviour {
             };
             hj.limits = angles;
         }
+        rb.velocity = getVelocityTangent() + getVelocityNormal() * drift;
 	}
+
+    Vector2 getVelocityTangent()
+    {
+        return transform.up * Vector2.Dot(rb.velocity, transform.up);
+    }
+
+    Vector2 getVelocityNormal()
+    {
+        return transform.right * Vector2.Dot(rb.velocity, transform.right);
+    }
 }

@@ -21,9 +21,9 @@ MonoBehaviour:
     width: 1366
     height: 635
   m_MinSize: {x: 681, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 1916
+  controlID: 3982
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -120,10 +120,10 @@ MonoBehaviour:
     y: 0
     width: 968
     height: 635
-  m_MinSize: {x: 406, y: 492}
+  m_MinSize: {x: 404, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 1917
+  controlID: 3983
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,10 +144,10 @@ MonoBehaviour:
     y: 0
     width: 968
     height: 357
-  m_MinSize: {x: 406, y: 221}
-  m_MaxSize: {x: 8006, y: 4021}
+  m_MinSize: {x: 404, y: 221}
+  m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 1888
+  controlID: 3811
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,8 +166,8 @@ MonoBehaviour:
     y: 0
     width: 291
     height: 357
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -200,10 +200,10 @@ MonoBehaviour:
     width: 289
     height: 336
   m_TreeViewState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e6f9ffff
-    m_LastClickedID: -1562
-    m_ExpandedIDs: 5efaffff6afaffffe2fbffff00000000
+    scrollPos: {x: 0, y: 33}
+    m_SelectedIDs: fca0ffff
+    m_LastClickedID: -24324
+    m_ExpandedIDs: 6afaffffe0fbffffe2fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -280,14 +280,14 @@ MonoBehaviour:
     width: 673
     height: 336
   m_SceneLighting: 1
-  lastFramingTime: 1196.331721591119
+  lastFramingTime: 448.55699121838273
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 10, y: 5, z: 10}
+    m_Target: {x: 223.0321, y: -65.931366, z: 471.9252}
     speed: 2
-    m_Value: {x: 10, y: 5, z: 10}
+    m_Value: {x: 223.0321, y: -65.931366, z: 471.9252}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -310,13 +310,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.24573113, y: 0.31345242, z: -0.08433075, w: 0.91337407}
+    m_Target: {x: -0.21123935, y: 0.5458356, z: -0.1445166, w: -0.7978448}
     speed: 2
-    m_Value: {x: -0.24573115, y: -0.31345242, z: 0.08433075, w: -0.91337407}
+    m_Value: {x: -0.21123934, y: 0.5458356, z: -0.1445166, w: -0.7978448}
   m_Size:
-    m_Target: 4.3748956
+    m_Target: 245.19576
     speed: 2
-    m_Value: 4.3748956
+    m_Value: 245.19576
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -416,19 +416,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Realistic Terrain Collection/Terrains/Terrain1
+    - Assets/Terrains
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Realistic Terrain Collection/Terrains/Terrain1
+  - Assets/Terrains
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Aman Deep Singh\Documents\Unity\Sandbox
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 92}
-    m_SelectedIDs: 68390000
-    m_LastClickedID: 14696
-    m_ExpandedIDs: 00000000b4250000d6280000e4290000bc2e0000742f00004c3900007e39000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 560}
+    m_SelectedIDs: 522e0000
+    m_LastClickedID: 11858
+    m_ExpandedIDs: 00000000a026000010280000dc290000fc2a00002a300000e63000006e31000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -456,7 +456,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b4250000d6280000e4290000bc2e0000742f00004c3900007e39000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000a026000010280000dc290000fc2a00002a300000e63000006e31000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -481,8 +481,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: e6f9ffff
-    m_LastClickedInstanceID: -1562
+    m_SelectedInstanceIDs: fca0ffff
+    m_LastClickedInstanceID: -24324
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
@@ -555,8 +555,8 @@ MonoBehaviour:
     y: 0
     width: 398
     height: 635
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
