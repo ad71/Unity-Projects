@@ -30,6 +30,8 @@ public class Engine : MonoBehaviour {
 
     private List<Transform> nodes;
     private int current = 0;
+    private bool avoiding = false;
+
 	// Use this for initialization
 	void Start () {
         GetComponent<Rigidbody>().centerOfMass = centerOfMass;
@@ -56,6 +58,7 @@ public class Engine : MonoBehaviour {
 
     private void ApplySteer()
     {
+        if (avoiding) return;
         Vector3 relative = this.transform.InverseTransformPoint(nodes[current].position);
         // relative /= relative.magnitude; // can be done by relative.Normalize() probably :/
         float steer = (relative.x / relative.magnitude) * maxSteerAngle;
@@ -112,36 +115,70 @@ public class Engine : MonoBehaviour {
         Vector3 origin = this.transform.position;
         origin += this.transform.forward * sensorPosition.z;
         origin += this.transform.up * sensorPosition.y;
-        // Front center sensor
-        if (Physics.Raycast(origin, this.transform.forward, out hit, sensorLength))
-        {
-            Debug.DrawLine(origin, hit.point);
-        }
+        float avoidMultiplier = 0f;
+        avoiding = false;
 
         // Front right sensor
         origin += transform.right * sideSensorOffset;
         if (Physics.Raycast(origin, this.transform.forward, out hit, sensorLength))
         {
-            Debug.DrawLine(origin, hit.point);
+            if (!hit.collider.CompareTag("Terrain"))
+            {
+                Debug.DrawLine(origin, hit.point);
+                avoiding = true;
+                avoidMultiplier -= 1f;
+            }
         }
 
         // Front right skew sensor
-        if (Physics.Raycast(origin, Quaternion.AngleAxis(sensorSkewAngle, this.transform.up) * transform.forward, out hit, sensorLength))
+        else if (Physics.Raycast(origin, Quaternion.AngleAxis(sensorSkewAngle, this.transform.up) * transform.forward, out hit, sensorLength))
         {
-            Debug.DrawLine(origin, hit.point);
+            if (!hit.collider.CompareTag("Terrain"))
+            {
+                Debug.DrawLine(origin, hit.point);
+                avoiding = true;
+                avoidMultiplier -= 0.5f;
+            }
         }
 
         // Front left sensor
         origin -= 2 * this.transform.right * sideSensorOffset;
         if (Physics.Raycast(origin, this.transform.forward, out hit, sensorLength))
         {
-            Debug.DrawLine(origin, hit.point);
+            if (!hit.collider.CompareTag("Terrain"))
+            {
+                Debug.DrawLine(origin, hit.point);
+                avoiding = true;
+                avoidMultiplier += 1f;
+            }
         }
 
         // Front right skew sensor
-        if (Physics.Raycast(origin, Quaternion.AngleAxis(-sensorSkewAngle, this.transform.up) * transform.forward, out hit, sensorLength))
+        else if (Physics.Raycast(origin, Quaternion.AngleAxis(-sensorSkewAngle, this.transform.up) * transform.forward, out hit, sensorLength))
         {
-            Debug.DrawLine(origin, hit.point);
+            if (!hit.collider.CompareTag("Terrain"))
+            {
+                Debug.DrawLine(origin, hit.point);
+                avoiding = true;
+                avoidMultiplier += 0.5f;
+            }
         }
+
+        // Front center sensor
+        if (Physics.Raycast(origin, this.transform.forward, out hit, sensorLength))
+        {
+            if (!hit.collider.CompareTag("Terrain"))
+            {
+                Debug.DrawLine(origin, hit.point);
+                avoiding = true;
+            }
+        }
+
+        if (avoiding)
+        {
+            wheelfl.steerAngle = maxSteerAngle * avoidMultiplier;
+            wheelfr.steerAngle = maxSteerAngle * avoidMultiplier;
+        }
+        // There being only one else statement is bothering me.
     }
 }
