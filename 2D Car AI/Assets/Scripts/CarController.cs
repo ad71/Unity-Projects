@@ -29,6 +29,8 @@ public class CarController : MonoBehaviour {
         RaycastHit2D fronthit = Physics2D.Raycast(origin, this.transform.up, Mathf.Infinity, layermask);
         RaycastHit2D rightskewhit = Physics2D.Raycast(origin, 2*this.transform.up + this.transform.right, Mathf.Infinity, layermask);
         RaycastHit2D leftskewhit = Physics2D.Raycast(origin, 2 * this.transform.up - this.transform.right, Mathf.Infinity, layermask);
+        RaycastHit2D lefthit = Physics2D.Raycast(origin, -this.transform.right, Mathf.Infinity, layermask);
+        RaycastHit2D righthit = Physics2D.Raycast(origin, this.transform.right, Mathf.Infinity, layermask);
 
         if (fronthit)
         {
@@ -37,11 +39,11 @@ public class CarController : MonoBehaviour {
             // Debug.Log(rightskewhit.collider.name);
             // Debug.DrawLine(transform.position, rightskewhit.point, Color.green, 1);
             // Debug.DrawLine(transform.position, leftskewhit.point, Color.green, 1);
-            if (fronthit.distance > 16f && !Input.GetKey(KeyCode.UpArrow))
+            if (fronthit.distance > 12f && !Input.GetKey(KeyCode.UpArrow))
             {
                 InputSimulator.SimulateKeyPress(VirtualKeyCode.UP);
             }
-            if (fronthit.distance < 16f)
+            if (fronthit.distance < 12f)
             {
                 // InputSimulator.SimulateKeyPress(VirtualKeyCode.DOWN);
                 if (leftskewhit.distance < rightskewhit.distance && Vector2.Dot(this.transform.up, rb.velocity) > 0) InputSimulator.SimulateKeyPress(VirtualKeyCode.RIGHT);
@@ -52,6 +54,22 @@ public class CarController : MonoBehaviour {
             if (fronthit.distance < 5f)
             {
                 InputSimulator.SimulateKeyPress(VirtualKeyCode.DOWN);
+            }
+            if (lefthit.distance < 2f)
+            {
+                InputSimulator.SimulateKeyPress(VirtualKeyCode.RIGHT);
+            }
+            if (righthit.distance < 2f)
+            {
+                InputSimulator.SimulateKeyPress(VirtualKeyCode.LEFT);
+            }
+            if (rightskewhit.distance > leftskewhit.distance + 20f)
+            {
+                InputSimulator.SimulateKeyPress(VirtualKeyCode.RIGHT);
+            }
+            if (leftskewhit.distance > rightskewhit.distance + 20f)
+            {
+                InputSimulator.SimulateKeyPress(VirtualKeyCode.LEFT);
             }
         }
     }
