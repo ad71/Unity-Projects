@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarAi.Plugins", "CarAi.Plugins.csproj", "{96A68B5C-1E94-AAB4-04D5-42EAAE88705F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarAi", "CarAi.csproj", "{9621EFA1-61CC-E7B4-4D83-88A2617BF12B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96A68B5C-1E94-AAB4-04D5-42EAAE88705F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96A68B5C-1E94-AAB4-04D5-42EAAE88705F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96A68B5C-1E94-AAB4-04D5-42EAAE88705F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96A68B5C-1E94-AAB4-04D5-42EAAE88705F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9621EFA1-61CC-E7B4-4D83-88A2617BF12B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9621EFA1-61CC-E7B4-4D83-88A2617BF12B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9621EFA1-61CC-E7B4-4D83-88A2617BF12B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9621EFA1-61CC-E7B4-4D83-88A2617BF12B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
