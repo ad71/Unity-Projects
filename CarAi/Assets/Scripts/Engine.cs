@@ -6,10 +6,6 @@ public class Engine : MonoBehaviour {
 
     public Transform path;
     public float maxSteerAngle = 45f;
-    public WheelCollider wheelfl;
-    public WheelCollider wheelfr;
-    public WheelCollider wheelrl;
-    public WheelCollider wheelrr;
     public float maxMotorTorque = 100f;
     public float maxBrakingTorque = 170f;
     public float currentSpeed;
@@ -19,6 +15,15 @@ public class Engine : MonoBehaviour {
     public Texture2D normal;
     public Texture2D braking;
     public Renderer carTextureRenderer;
+
+    [Header("Colliders")]
+    public WheelCollider wheelfl;
+    public WheelCollider wheelfr;
+    public WheelCollider wheelrl;
+    public WheelCollider wheelrr;
+
+    [Header("Sensors")]
+    public float sensorLength = 5f;
 
     private List<Transform> nodes;
     private int current = 0;
