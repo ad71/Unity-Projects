@@ -109,7 +109,9 @@ public class Engine : MonoBehaviour {
     private void Sense()
     {
         RaycastHit hit;
-        Vector3 origin = this.transform.position + sensorPosition;
+        Vector3 origin = this.transform.position;
+        origin += this.transform.forward * sensorPosition.z;
+        origin += this.transform.up * sensorPosition.y;
         // Front center sensor
         if (Physics.Raycast(origin, this.transform.forward, out hit, sensorLength))
         {
@@ -117,7 +119,7 @@ public class Engine : MonoBehaviour {
         }
 
         // Front right sensor
-        origin.x += sideSensorOffset;
+        origin += transform.right * sideSensorOffset;
         if (Physics.Raycast(origin, this.transform.forward, out hit, sensorLength))
         {
             Debug.DrawLine(origin, hit.point);
@@ -130,7 +132,7 @@ public class Engine : MonoBehaviour {
         }
 
         // Front left sensor
-        origin.x -= 2 * sideSensorOffset;
+        origin -= 2 * this.transform.right * sideSensorOffset;
         if (Physics.Raycast(origin, this.transform.forward, out hit, sensorLength))
         {
             Debug.DrawLine(origin, hit.point);
