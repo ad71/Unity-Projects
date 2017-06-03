@@ -165,12 +165,17 @@ public class Engine : MonoBehaviour {
         }
 
         // Front center sensor
-        if (Physics.Raycast(origin, this.transform.forward, out hit, sensorLength))
+        if (avoidMultiplier == 0)
         {
-            if (!hit.collider.CompareTag("Terrain"))
+            if (Physics.Raycast(origin, this.transform.forward, out hit, sensorLength))
             {
-                Debug.DrawLine(origin, hit.point);
-                avoiding = true;
+                if (!hit.collider.CompareTag("Terrain"))
+                {
+                    Debug.DrawLine(origin, hit.point);
+                    avoiding = true;
+                    if (hit.normal.x < 0) avoidMultiplier = -1;
+                    else avoidMultiplier = 1;
+                }
             }
         }
 
