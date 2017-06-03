@@ -23,7 +23,8 @@ public class Engine : MonoBehaviour {
     public WheelCollider wheelrr;
 
     [Header("Sensors")]
-    public float sensorLength = 5f;
+    public float sensorLength = 3f;
+    public float sensorPosition = 0.5f;
 
     private List<Transform> nodes;
     private int current = 0;
@@ -44,6 +45,7 @@ public class Engine : MonoBehaviour {
 	
 	// Update is called once per frame
 	private void FixedUpdate () {
+        Sense();
         ApplySteer();
         Drive();
         NextWaypoint();
@@ -100,5 +102,18 @@ public class Engine : MonoBehaviour {
             wheelrl.brakeTorque = 0;
             wheelrr.brakeTorque = 0;
         }
+    }
+
+    private void Sense()
+    {
+        RaycastHit hit;
+        Vector3 origin = this.transform.position;
+        origin.z += sensorPosition;
+
+        if (Physics.Raycast(origin, this.transform.forward, out hit, sensorLength))
+        {
+
+        }
+        Debug.DrawLine(origin, hit.point);
     }
 }
