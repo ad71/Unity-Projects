@@ -28,6 +28,7 @@ public class Path : MonoBehaviour {
             if (i > 0) previous = nodes[i - 1].position;
             else if (i == 0 && nodes.Count > 1) previous = nodes[nodes.Count - 1].position;
             Gizmos.DrawLine(previous, current);
+            Gizmos.DrawWireSphere(current, 0.3f);
         }
     }
 }
