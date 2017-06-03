@@ -32,21 +32,23 @@ public class CarController : MonoBehaviour {
 
         if (fronthit)
         {
-            Debug.Log(fronthit.collider.name);
+            // Debug.Log(fronthit.collider.name);
             // Debug.DrawLine(transform.position, fronthit.point, Color.red, 1);
             // Debug.Log(rightskewhit.collider.name);
-            Debug.DrawLine(transform.position, rightskewhit.point, Color.green, 1);
-            Debug.DrawLine(transform.position, leftskewhit.point, Color.green, 1);
+            // Debug.DrawLine(transform.position, rightskewhit.point, Color.green, 1);
+            // Debug.DrawLine(transform.position, leftskewhit.point, Color.green, 1);
             if (fronthit.distance > 16f && !Input.GetKey(KeyCode.UpArrow))
             {
                 InputSimulator.SimulateKeyPress(VirtualKeyCode.UP);
             }
-            //if (fronthit.distance < 16f)
-            //{
+            if (fronthit.distance < 16f)
+            {
                 // InputSimulator.SimulateKeyPress(VirtualKeyCode.DOWN);
-                if (leftskewhit.distance < rightskewhit.distance) InputSimulator.SimulateKeyPress(VirtualKeyCode.RIGHT);
-                if (rightskewhit.distance < leftskewhit.distance) InputSimulator.SimulateKeyPress(VirtualKeyCode.LEFT);
-            //}
+                if (leftskewhit.distance < rightskewhit.distance && Vector2.Dot(this.transform.up, rb.velocity) > 0) InputSimulator.SimulateKeyPress(VirtualKeyCode.RIGHT);
+                if (leftskewhit.distance < rightskewhit.distance && Vector2.Dot(this.transform.up, rb.velocity) < 0) InputSimulator.SimulateKeyPress(VirtualKeyCode.LEFT);
+                if (rightskewhit.distance < leftskewhit.distance && Vector2.Dot(this.transform.up, rb.velocity) > 0) InputSimulator.SimulateKeyPress(VirtualKeyCode.LEFT);
+                if (rightskewhit.distance < leftskewhit.distance && Vector2.Dot(this.transform.up, rb.velocity) < 0) InputSimulator.SimulateKeyPress(VirtualKeyCode.RIGHT);
+            }
             if (fronthit.distance < 5f)
             {
                 InputSimulator.SimulateKeyPress(VirtualKeyCode.DOWN);
