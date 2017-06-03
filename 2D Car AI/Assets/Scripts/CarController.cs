@@ -35,10 +35,12 @@ public class CarController : MonoBehaviour {
         if (fronthit)
         {
             // Debug.Log(fronthit.collider.name);
-            // Debug.DrawLine(transform.position, fronthit.point, Color.red, 1);
+            // Debug.DrawLine(transform.position, fronthit.point, Color.green, 0.3f);
             // Debug.Log(rightskewhit.collider.name);
-            // Debug.DrawLine(transform.position, rightskewhit.point, Color.green, 1);
-            // Debug.DrawLine(transform.position, leftskewhit.point, Color.green, 1);
+            // Debug.DrawLine(transform.position, rightskewhit.point, Color.green, 0.3f);
+            // Debug.DrawLine(transform.position, leftskewhit.point, Color.green, 0.3f);
+            // Debug.DrawLine(transform.position, lefthit.point, Color.green, 0.3f);
+            // Debug.DrawLine(transform.position, righthit.point, Color.green, 0.3f);
             if (fronthit.distance > 12f && !Input.GetKey(KeyCode.UpArrow))
             {
                 InputSimulator.SimulateKeyPress(VirtualKeyCode.UP);
@@ -63,13 +65,26 @@ public class CarController : MonoBehaviour {
             {
                 InputSimulator.SimulateKeyPress(VirtualKeyCode.LEFT);
             }
-            if (rightskewhit.distance > leftskewhit.distance + 20f)
+            if (rightskewhit.distance > leftskewhit.distance + 30f)
             {
                 InputSimulator.SimulateKeyPress(VirtualKeyCode.RIGHT);
             }
-            if (leftskewhit.distance > rightskewhit.distance + 20f)
+            if (leftskewhit.distance > rightskewhit.distance + 30f)
             {
                 InputSimulator.SimulateKeyPress(VirtualKeyCode.LEFT);
+            }
+            if (rb.velocity.magnitude < 0.05 && fronthit.distance > 5f)
+            {
+                if (leftskewhit.distance > rightskewhit.distance)
+                {
+                    InputSimulator.SimulateKeyPress(VirtualKeyCode.RIGHT);
+                    InputSimulator.SimulateKeyPress(VirtualKeyCode.UP);
+                }
+                if (rightskewhit.distance > leftskewhit.distance)
+                {
+                    InputSimulator.SimulateKeyPress(VirtualKeyCode.LEFT);
+                    InputSimulator.SimulateKeyPress(VirtualKeyCode.UP);
+                }
             }
         }
     }
