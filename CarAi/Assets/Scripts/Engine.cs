@@ -6,6 +6,7 @@ public class Engine : MonoBehaviour {
 
     public Transform path;
     public float maxSteerAngle = 45f;
+    public float turningSpeed = 5f;
     public float maxMotorTorque = 100f;
     public float maxBrakingTorque = 170f;
     public float currentSpeed;
@@ -31,6 +32,7 @@ public class Engine : MonoBehaviour {
     private List<Transform> nodes;
     private int current = 0;
     private bool avoiding = false;
+    private float targetSteerAngle = 0f;
 
 	// Use this for initialization
 	void Start () {
@@ -54,6 +56,7 @@ public class Engine : MonoBehaviour {
         Drive();
         NextWaypoint();
         Brake();
+        LerpTosteerAngle();
 	}
 
     private void ApplySteer()
@@ -62,8 +65,7 @@ public class Engine : MonoBehaviour {
         Vector3 relative = this.transform.InverseTransformPoint(nodes[current].position);
         // relative /= relative.magnitude; // can be done by relative.Normalize() probably :/
         float steer = (relative.x / relative.magnitude) * maxSteerAngle;
-        wheelfl.steerAngle = steer;
-        wheelfr.steerAngle = steer;
+        targetSteerAngle = steer;
     }
 
     private void Drive()
@@ -181,9 +183,14 @@ public class Engine : MonoBehaviour {
 
         if (avoiding)
         {
-            wheelfl.steerAngle = maxSteerAngle * avoidMultiplier;
-            wheelfr.steerAngle = maxSteerAngle * avoidMultiplier;
+            targetSteerAngle = maxSteerAngle * avoidMultiplier;
         }
         // There being only one else statement is bothering me.
+    }
+
+    private void LerpTosteerAngle()
+    {
+        wheelfl.steerAngle = Mathf.Lerp(wheelfl.steerAngle, targetSteerAngle, Time.deltaTime * turningSpeed);
+        wheelfr.steerAngle = Mathf.Lerp(wheelfr.steerAngle, targetSteerAngle, Time.deltaTime * turningSpeed);
     }
 }
