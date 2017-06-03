@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using WindowsInput;
 
 public class CarController : MonoBehaviour {
 
@@ -25,12 +26,31 @@ public class CarController : MonoBehaviour {
         //Debug.Log(hit.collider.name);
         //}
         Vector2 origin = new Vector2(transform.position.x, transform.position.y);
-        RaycastHit2D hit = Physics2D.Raycast(origin, rb.velocity, Mathf.Infinity, layermask);
+        RaycastHit2D fronthit = Physics2D.Raycast(origin, this.transform.up, Mathf.Infinity, layermask);
+        RaycastHit2D rightskewhit = Physics2D.Raycast(origin, 2*this.transform.up + this.transform.right, Mathf.Infinity, layermask);
+        RaycastHit2D leftskewhit = Physics2D.Raycast(origin, 2 * this.transform.up - this.transform.right, Mathf.Infinity, layermask);
 
-        if (hit)
+        if (fronthit)
         {
-            Debug.Log(hit.collider.name);
-            Debug.DrawLine(transform.position, hit.point, Color.red, 1);
+            Debug.Log(fronthit.collider.name);
+            // Debug.DrawLine(transform.position, fronthit.point, Color.red, 1);
+            // Debug.Log(rightskewhit.collider.name);
+            Debug.DrawLine(transform.position, rightskewhit.point, Color.green, 1);
+            Debug.DrawLine(transform.position, leftskewhit.point, Color.green, 1);
+            if (fronthit.distance > 16f && !Input.GetKey(KeyCode.UpArrow))
+            {
+                InputSimulator.SimulateKeyPress(VirtualKeyCode.UP);
+            }
+            //if (fronthit.distance < 16f)
+            //{
+                // InputSimulator.SimulateKeyPress(VirtualKeyCode.DOWN);
+                if (leftskewhit.distance < rightskewhit.distance) InputSimulator.SimulateKeyPress(VirtualKeyCode.RIGHT);
+                if (rightskewhit.distance < leftskewhit.distance) InputSimulator.SimulateKeyPress(VirtualKeyCode.LEFT);
+            //}
+            if (fronthit.distance < 5f)
+            {
+                InputSimulator.SimulateKeyPress(VirtualKeyCode.DOWN);
+            }
         }
     }
 
