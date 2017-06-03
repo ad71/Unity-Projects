@@ -27,8 +27,8 @@ public class FrontWheelController : MonoBehaviour {
             hj.useMotor = true;
             JointMotor2D motor = new JointMotor2D
             {
-                motorSpeed = 100,
-                maxMotorTorque = 10000
+                motorSpeed = 20,
+                maxMotorTorque = 100
             };
             hj.motor = motor;
         }
@@ -37,8 +37,8 @@ public class FrontWheelController : MonoBehaviour {
             hj.useMotor = true;
             JointMotor2D motor = new JointMotor2D
             {
-                motorSpeed = -100,
-                maxMotorTorque = 10000
+                motorSpeed = -20,
+                maxMotorTorque = 100
             };
             hj.motor = motor;
         } 
