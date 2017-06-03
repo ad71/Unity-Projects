@@ -24,7 +24,9 @@ public class Engine : MonoBehaviour {
 
     [Header("Sensors")]
     public float sensorLength = 3f;
-    public float sensorPosition = 0.5f;
+    public Vector3 sensorPosition = new Vector3(0, 0.2f, 0.5f);
+    public float sideSensorOffset = 0.2f;
+    public float sensorSkewAngle = 30f;
 
     private List<Transform> nodes;
     private int current = 0;
@@ -77,7 +79,7 @@ public class Engine : MonoBehaviour {
 
     private void NextWaypoint()
     {
-        if (Vector3.Distance(this.transform.position, nodes[current].position) < 5f)
+        if (Vector3.Distance(this.transform.position, nodes[current].position) < 3f)
         {
             if (current == nodes.Count - 1)
             {
@@ -107,10 +109,39 @@ public class Engine : MonoBehaviour {
     private void Sense()
     {
         RaycastHit hit;
-        Vector3 origin = this.transform.position;
-        origin.z += sensorPosition;
-
+        Vector3 origin = this.transform.position + sensorPosition;
+        // Front center sensor
         if (Physics.Raycast(origin, this.transform.forward, out hit, sensorLength))
+        {
+
+        }
+        Debug.DrawLine(origin, hit.point);
+
+        // Front right sensor
+        origin.x += sideSensorOffset;
+        if (Physics.Raycast(origin, this.transform.forward, out hit, sensorLength))
+        {
+
+        }
+        Debug.DrawLine(origin, hit.point);
+
+        // Front right skew sensor
+        if (Physics.Raycast(origin, Quaternion.AngleAxis(sensorSkewAngle, this.transform.up) * transform.forward, out hit, sensorLength))
+        {
+
+        }
+        Debug.DrawLine(origin, hit.point);
+
+        // Front left sensor
+        origin.x -= 2 * sideSensorOffset;
+        if (Physics.Raycast(origin, this.transform.forward, out hit, sensorLength))
+        {
+
+        }
+        Debug.DrawLine(origin, hit.point);
+
+        // Front right skew sensor
+        if (Physics.Raycast(origin, Quaternion.AngleAxis(-sensorSkewAngle, this.transform.up) * transform.forward, out hit, sensorLength))
         {
 
         }
