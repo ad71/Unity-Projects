@@ -6,7 +6,7 @@ public class Path : MonoBehaviour {
 
     public Color lineColor;
     private List<Transform> nodes = new List<Transform>();
-    private void OnDrawGizmos()
+    void OnDrawGizmos()
     {
         Gizmos.color = lineColor;
         Transform[] pathTransforms = GetComponentsInChildren<Transform>();
@@ -19,6 +19,15 @@ public class Path : MonoBehaviour {
             {
                 nodes.Add(pathTransforms[i]);
             }
+        }
+
+        for(int i = 0; i < nodes.Count; ++i)
+        {
+            Vector3 current = nodes[i].position;
+            Vector3 previous = Vector3.zero;
+            if (i > 0) previous = nodes[i - 1].position;
+            else if (i == 0 && nodes.Count > 1) previous = nodes[nodes.Count - 1].position;
+            Gizmos.DrawLine(previous, current);
         }
     }
 }
