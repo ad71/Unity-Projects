@@ -20,7 +20,7 @@ public class BackWheelController : MonoBehaviour {
         } else if(Input.GetKey(KeyCode.DownArrow))
         {
             // rb.AddForce(-this.transform.up * speed);
-            rb.velocity = new Vector2(0, 0);
+            // rb.velocity = new Vector2(0, 0);
         }
         rb.velocity = getVelocityTangent() + getVelocityNormal() * drift;
 	}
