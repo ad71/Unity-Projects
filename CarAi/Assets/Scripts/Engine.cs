@@ -5,7 +5,7 @@ using UnityEngine;
 public class Engine : MonoBehaviour {
 
     public Transform path;
-    public float maxSteerAngle = 45f;
+    public float maxSteerAngle = 35f;
     public float turningSpeed = 5f;
     public float maxMotorTorque = 100f;
     public float maxBrakingTorque = 170f;
