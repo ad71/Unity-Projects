@@ -113,38 +113,33 @@ public class Engine : MonoBehaviour {
         // Front center sensor
         if (Physics.Raycast(origin, this.transform.forward, out hit, sensorLength))
         {
-
+            Debug.DrawLine(origin, hit.point);
         }
-        Debug.DrawLine(origin, hit.point);
 
         // Front right sensor
         origin.x += sideSensorOffset;
         if (Physics.Raycast(origin, this.transform.forward, out hit, sensorLength))
         {
-
+            Debug.DrawLine(origin, hit.point);
         }
-        Debug.DrawLine(origin, hit.point);
 
         // Front right skew sensor
         if (Physics.Raycast(origin, Quaternion.AngleAxis(sensorSkewAngle, this.transform.up) * transform.forward, out hit, sensorLength))
         {
-
+            Debug.DrawLine(origin, hit.point);
         }
-        Debug.DrawLine(origin, hit.point);
 
         // Front left sensor
         origin.x -= 2 * sideSensorOffset;
         if (Physics.Raycast(origin, this.transform.forward, out hit, sensorLength))
         {
-
+            Debug.DrawLine(origin, hit.point);
         }
-        Debug.DrawLine(origin, hit.point);
 
         // Front right skew sensor
         if (Physics.Raycast(origin, Quaternion.AngleAxis(-sensorSkewAngle, this.transform.up) * transform.forward, out hit, sensorLength))
         {
-
+            Debug.DrawLine(origin, hit.point);
         }
-        Debug.DrawLine(origin, hit.point);
     }
 }
