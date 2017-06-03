@@ -28,6 +28,8 @@ public class Engine : MonoBehaviour {
 	// Update is called once per frame
 	private void FixedUpdate () {
         ApplySteer();
+        Drive();
+        NextWaypoint();
 	}
 
     private void ApplySteer()
@@ -37,5 +39,25 @@ public class Engine : MonoBehaviour {
         float steer = (relative.x / relative.magnitude) * maxSteerAngle;
         wheelfl.steerAngle = steer;
         wheelfr.steerAngle = steer;
+    }
+
+    private void Drive()
+    {
+        wheelfl.motorTorque = 100f;
+        wheelfr.motorTorque = 100f;
+    }
+
+    private void NextWaypoint()
+    {
+        if (Vector3.Distance(this.transform.position, nodes[current].position) < 5f)
+        {
+            if (current == nodes.Count - 1)
+            {
+                current = 0;
+            } else
+            {
+                current++;
+            }
+        }
     }
 }
