@@ -8,10 +8,17 @@ public class Engine : MonoBehaviour {
     public float maxSteerAngle = 45f;
     public WheelCollider wheelfl;
     public WheelCollider wheelfr;
-    public float mmt = 100f;
+    public WheelCollider wheelrl;
+    public WheelCollider wheelrr;
+    public float maxMotorTorque = 100f;
+    public float maxBrakingTorque = 170f;
     public float currentSpeed;
     public float maxSpeed = 100f;
     public Vector3 centerOfMass;
+    public bool isBraking = false;
+    public Texture2D normal;
+    public Texture2D braking;
+    public Renderer carTextureRenderer;
 
     private List<Transform> nodes;
     private int current = 0;
@@ -35,6 +42,7 @@ public class Engine : MonoBehaviour {
         ApplySteer();
         Drive();
         NextWaypoint();
+        Brake();
 	}
 
     private void ApplySteer()
@@ -49,10 +57,10 @@ public class Engine : MonoBehaviour {
     private void Drive()
     {
         currentSpeed = 2 * Mathf.PI * wheelfl.radius * wheelfl.rpm * 60 / 1000;
-        if (currentSpeed < maxSpeed)
+        if (currentSpeed < maxSpeed && !isBraking)
         {
-            wheelfl.motorTorque = mmt;
-            wheelfr.motorTorque = mmt;
+            wheelfl.motorTorque = maxMotorTorque;
+            wheelfr.motorTorque = maxMotorTorque;
         } else
         {
             wheelfl.motorTorque = 0;
@@ -71,6 +79,21 @@ public class Engine : MonoBehaviour {
             {
                 current++;
             }
+        }
+    }
+
+    private void Brake()
+    {
+        if(isBraking)
+        {
+            carTextureRenderer.material.mainTexture = braking;
+            wheelrl.brakeTorque = maxBrakingTorque;
+            wheelrr.brakeTorque = maxBrakingTorque;
+        } else
+        {
+            carTextureRenderer.material.mainTexture = normal;
+            wheelrl.brakeTorque = 0;
+            wheelrr.brakeTorque = 0;
         }
     }
 }
