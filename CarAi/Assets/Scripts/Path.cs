@@ -6,7 +6,8 @@ public class Path : MonoBehaviour {
 
     public Color lineColor;
     private List<Transform> nodes = new List<Transform>();
-    void OnDrawGizmos()
+    // OnDrawGizmosSelected() draws the gizmo only when the GameObject is selected
+    void OnDrawGizmosSelected()
     {
         Gizmos.color = lineColor;
         Transform[] pathTransforms = GetComponentsInChildren<Transform>();
