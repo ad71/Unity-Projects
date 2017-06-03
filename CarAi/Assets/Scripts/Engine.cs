@@ -9,6 +9,8 @@ public class Engine : MonoBehaviour {
     public WheelCollider wheelfl;
     public WheelCollider wheelfr;
     public float mmt = 100f;
+    public float currentSpeed;
+    public float maxSpeed = 100f;
 
     private List<Transform> nodes;
     private int current = 0;
@@ -44,8 +46,16 @@ public class Engine : MonoBehaviour {
 
     private void Drive()
     {
-        wheelfl.motorTorque = mmt;
-        wheelfr.motorTorque = mmt;
+        currentSpeed = 2 * Mathf.PI * wheelfl.radius * wheelfl.rpm * 60 / 1000;
+        if (currentSpeed < maxSpeed)
+        {
+            wheelfl.motorTorque = mmt;
+            wheelfr.motorTorque = mmt;
+        } else
+        {
+            wheelfl.motorTorque = 0;
+            wheelfr.motorTorque = 0;
+        }
     }
 
     private void NextWaypoint()
