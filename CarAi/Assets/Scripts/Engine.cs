@@ -8,6 +8,7 @@ public class Engine : MonoBehaviour {
     public float maxSteerAngle = 45f;
     public WheelCollider wheelfl;
     public WheelCollider wheelfr;
+    public float mmt = 100f;
 
     private List<Transform> nodes;
     private int current = 0;
@@ -43,8 +44,8 @@ public class Engine : MonoBehaviour {
 
     private void Drive()
     {
-        wheelfl.motorTorque = 100f;
-        wheelfr.motorTorque = 100f;
+        wheelfl.motorTorque = mmt;
+        wheelfr.motorTorque = mmt;
     }
 
     private void NextWaypoint()
