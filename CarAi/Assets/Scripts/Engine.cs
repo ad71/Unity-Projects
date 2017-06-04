@@ -56,7 +56,7 @@ public class Engine : MonoBehaviour {
         Drive();
         NextWaypoint();
         Brake();
-        LerpTosteerAngle();
+        // LerpTosteerAngle();
 	}
 
     private void ApplySteer()
@@ -65,7 +65,9 @@ public class Engine : MonoBehaviour {
         Vector3 relative = this.transform.InverseTransformPoint(nodes[current].position);
         // relative /= relative.magnitude; // can be done by relative.Normalize() probably :/
         float steer = (relative.x / relative.magnitude) * maxSteerAngle;
-        targetSteerAngle = steer;
+        // targetSteerAngle = steer;
+        wheelfl.steerAngle = steer;
+        wheelfr.steerAngle = steer;
     }
 
     private void Drive()
@@ -183,7 +185,9 @@ public class Engine : MonoBehaviour {
 
         if (avoiding)
         {
-            targetSteerAngle = maxSteerAngle * avoidMultiplier;
+            // targetSteerAngle = maxSteerAngle * avoidMultiplier;
+            wheelfl.steerAngle = maxSteerAngle * avoidMultiplier;
+            wheelfr.steerAngle = maxSteerAngle * avoidMultiplier;
         }
         // There being only one else statement is bothering me.
     }

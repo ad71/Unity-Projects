@@ -17,7 +17,7 @@ Platform assembly: C:\Users\Aman Deep Singh\Documents\Unity\CarAi\Builds\Car AI_
 Loading C:\Users\Aman Deep Singh\Documents\Unity\CarAi\Builds\Car AI_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Aman Deep Singh\Documents\Unity\CarAi\Builds\Car AI_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\Aman Deep Singh\Documents\Unity\CarAi\Builds\Car AI_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.400 seconds
+- Completed reload, in  1.864 seconds
 Platform assembly: C:\Users\Aman Deep Singh\Documents\Unity\CarAi\Builds\Car AI_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Aman Deep Singh\Documents\Unity\CarAi\Builds\Car AI_Data\Managed\System.dll (this message is harmless)
 desktop: 1366x768 60Hz; virtual: 2732x768 at 0,0
@@ -25,7 +25,7 @@ desktop: 1366x768 60Hz; virtual: 2732x768 at 0,0
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.935929 ms
+UnloadTime: 2.138440 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 235c -> priority: 1 
-  Thread -> id: 5ae8 -> priority: 1 
+  Thread -> id: e88 -> priority: 1 
+  Thread -> id: 3554 -> priority: 1 
