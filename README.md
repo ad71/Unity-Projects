@@ -1,4 +1,5 @@
-# Abandoned Read-Only Repository
+# Simple Unity Projects
+### Abandoned Read-Only Repository
 ---
 
 ## Complete / Almost complete
@@ -26,6 +27,10 @@
 6.  [Space Shooter](https://github.com/ad71/Unity-Projects/tree/master/Space%20Shooter): Space shooter game, from the Unity official tutorials.
 
 ![title](https://github.com/ad71/Unity-Projects/blob/master/Procedural%20Terrain/ss_2.jpg)
+
+7.  [UFO](https://github.com/ad71/Unity-Projects/tree/master/UFO): UFO maneuvring game, from the Unity official tutorials.
+
+![title](https://github.com/ad71/Unity-Projects/blob/master/Procedural%20Terrain/ss_3.jpg)
 
 
 ## Incomplete / Doesn't work
