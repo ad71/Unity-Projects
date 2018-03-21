@@ -21,6 +21,8 @@
 
 5.  [Scavengers](https://github.com/ad71/Unity-Projects/tree/master/Scavengers): First 2D rogue-like game, from the Unity official tutorials.
 
+![title](https://github.com/ad71/Unity-Projects/blob/master/Procedural%20Terrain/ss_1.jpg)
+
 ## Incomplete / Doesn't work
 1.  [2D Car AI](https://github.com/ad71/Unity-Projects/tree/master/2D%20Car%20AI): [Doesn't work] First attempt at a 2D Car AI.
 2.  [Buoyant](https://github.com/ad71/Unity-Projects/tree/master/Buoyant): [Doesn't work] Attempt to realistically simulate buoyancy.
