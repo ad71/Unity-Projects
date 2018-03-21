@@ -12,5 +12,4 @@
 6.  [Line Rider](https://github.com/ad71/Unity-Projects/tree/master/Line%20Rider): Replica of 'Line Rider' with real-time track editing.
 
 ![title](https://github.com/ad71/Unity-Projects/blob/master/Line%20Rider/ss.jpg)
-
 ![title](https://github.com/ad71/Unity-Projects/blob/master/Line%20Rider/ss_1.jpg)
